@@ -1,0 +1,26 @@
+[Unit]
+Description=Skidplate authenticated audit log read access
+[Service]
+Type=dbus
+BusName=org.skidplate.LogAccess1
+ExecStart=/usr/bin/python3 -I /usr/local/libexec/skidplate-log-access
+User=root
+UMask=0077
+NoNewPrivileges=yes
+ProtectSystem=strict
+ReadWritePaths=/var/log/audit
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+PrivateNetwork=yes
+RestrictAddressFamilies=AF_UNIX
+CapabilityBoundingSet=CAP_FOWNER CAP_DAC_READ_SEARCH
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes
+SystemCallArchitectures=native
+MemoryMax=128M
+TasksMax=16
+TimeoutStopSec=5

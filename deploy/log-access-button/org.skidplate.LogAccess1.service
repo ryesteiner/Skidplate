@@ -1,0 +1,5 @@
+[D-BUS Service]
+Name=org.skidplate.LogAccess1
+Exec=/usr/bin/python3 -I /usr/local/libexec/skidplate-log-access
+User=root
+SystemdService=skidplate-log-access.service
