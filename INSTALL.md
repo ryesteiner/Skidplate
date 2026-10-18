@@ -133,21 +133,6 @@ reported previous payload to `~/.local/share/skidplate`. Restore any customized
 launcher/unit copies, reload user units and start again. Keep state backups:
 rolling back application code does not roll back future database changes.
 
-## Existing local Audit Sentinel installation
-
-The canonical service is now `skidplate.service`. Before starting it, stop and
-disable the earlier service if you installed that version:
-
-```sh
-systemctl --user disable --now audit-sentinel.service
-```
-
-Also quit any manually launched older tray instance. After validating the new
-app, remove the old `audit-sentinel.desktop` launcher and user-service file you
-previously installed, so duplicate app-menu entries do not remain. The installer
-never disables or deletes those legacy files automatically. See
-[compatibility.md](docs/compatibility.md) for state/database compatibility.
-
 ## Uninstall the application
 
 For the default prefix, stop the service/quit the tray first:
