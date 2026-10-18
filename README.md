@@ -1,6 +1,6 @@
 # Skidplate
 
-**Under the surface. On your side.**
+
 
 Skidplate is a local Linux audit-log viewer with behavior detections and
 process/network context. It combines an Event Viewer style investigation flow
@@ -9,6 +9,8 @@ with a car-inspired dashboard and a system-tray icon.
 Built for Arch Linux and Omarchy; other Linux desktops need the same GTK3,
 AppIndicator and auditd interfaces. This is a standalone application, not a
 native Omarchy shell plugin. It runs as your normal user.
+
+Inculdes AI generated code and run through codex security with no reported security issues. Needs Human verification still. 
 
 ## Features
 
