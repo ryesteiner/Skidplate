@@ -1,6 +1,6 @@
 # Skidplate
 
-[dashboard](assets/screenshot-2026-10-20_16-13-27.jpg)
+[dashboard](assets/screenshot.jpg)
 
 Skidplate is a local Linux audit-log viewer with behavior detections and
 process/network context. It combines an Event Viewer style investigation flow
