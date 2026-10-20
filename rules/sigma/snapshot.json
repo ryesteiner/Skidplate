@@ -1,0 +1,234 @@
+{
+  "retrieved": "2026-10-20",
+  "repository": "https://github.com/SigmaHQ/sigma",
+  "reference": "master (per-file content hashes; not a claimed repository commit)",
+  "license": "DRL-1.1",
+  "files": [
+    {
+      "file": "lnx_auditd_ld_so_preload_mod.yml",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/path/lnx_auditd_ld_so_preload_mod.yml",
+      "sha256": "881abf47d1bb4c88d6a2c33d54ff08f01a98add850341faac3264c09b975172a"
+    },
+    {
+      "file": "lnx_auditd_susp_exe_folders.yml",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/syscall/lnx_auditd_susp_exe_folders.yml",
+      "sha256": "39e008caa81f11bab0110693e885e05ef1089e776786b6abb5e16f8ada71dfcc"
+    },
+    {
+      "file": "lnx_auditd_logging_config_change.yml",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/path/lnx_auditd_logging_config_change.yml",
+      "sha256": "6959d440017089ade92f5bd7cca39821db654fc1e5f3fbb9d532471c81188bd1"
+    },
+    {
+      "file": "lnx_auditd_bpfdoor_file_accessed.yml",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/path/lnx_auditd_bpfdoor_file_accessed.yml",
+      "sha256": "ec14ad2f81662f6e4834cfceae37806ddf67d6f33067d02ed6fb32088606a9cc"
+    },
+    {
+      "file": "lnx_auditd_systemd_service_creation.yml",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/path/lnx_auditd_systemd_service_creation.yml",
+      "sha256": "f32bb99c4cc1ea87528d0769cc3e74de7ebe9349c949883bfc6df5d25d0a2dab"
+    },
+    {
+      "file": "lnx_auditd_unix_shell_configuration_modification.yml",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/path/lnx_auditd_unix_shell_configuration_modification.yml",
+      "sha256": "42c6895752245758d4c2dd68e6bece3876c73df418f9ee2d6b41f4ba411c7c9a"
+    },
+    {
+      "file": "lnx_auditd_magic_system_request_key.yml",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/path/lnx_auditd_magic_system_request_key.yml",
+      "sha256": "5fc561970df6c8b48ccd7b679800dee736cc8c792e1d7839e03f1920e0b36a49"
+    },
+    {
+      "file": "lnx_auditd_system_info_discovery2.yml",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/path/lnx_auditd_system_info_discovery2.yml",
+      "sha256": "9d6a2f70383b469ac458db7aa771e81384e882caaf0ee88f75a1a6f16b43f925"
+    },
+    {
+      "file": "lnx_auditd_create_account.yml",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/syscall/lnx_auditd_create_account.yml",
+      "sha256": "b65ae8b342d4f0ec2603a65cda8a6762dad58a8ecdc8fd0ddf097e885d6cde4f"
+    },
+    {
+      "file": "lnx_auditd_load_module_insmod.yml",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/syscall/lnx_auditd_load_module_insmod.yml",
+      "sha256": "ffc1793cbfc9059d5294e20c825c7d15ffe6ebfcb36625a34413041c8a90cbcd"
+    },
+    {
+      "file": "lnx_auditd_network_service_scanning.yml",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/syscall/lnx_auditd_network_service_scanning.yml",
+      "sha256": "1cf8f8bdf14232c618b499415187043afb24c35202a2f5017fa4e4cb1b90a942"
+    },
+    {
+      "file": "lnx_auditd_disable_aslr_protection.yml",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/lnx_auditd_disable_aslr_protection.yml",
+      "sha256": "8cb6126e08ec525a251233123bd6eda62e160dbf14490c0834a53d4bfcf0d8ee"
+    },
+    {
+      "file": "lnx_auditd_clean_disable_dmesg_logs_via_syslog.yml",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/syscall/lnx_auditd_clean_disable_dmesg_logs_via_syslog.yml",
+      "sha256": "4e01f4c621ab197a7005d223de57ee6431c6099449bbd4c6614c1df1e60795e8"
+    },
+    {
+      "file": "lnx_auditd_susp_special_file_creation_via_mknod_syscall.yml",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/syscall/lnx_auditd_susp_special_file_creation_via_mknod_syscall.yml",
+      "sha256": "ed033360d0682c68bb8264a21570ec86d51dff40bf7ebb654615371e48ab7399"
+    },
+    {
+      "file": "lnx_auditd_disable_system_firewall.yml",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/service_stop/lnx_auditd_disable_system_firewall.yml",
+      "sha256": "913f21f41ca301345804bcf72b1569318a23a6dfa56784a20b116cfa0cbbaaea"
+    },
+    {
+      "file": "lnx_auditd_binary_padding.yml",
+      "source": "https://github.com/SigmaHQ/sigma/blob/552f3fee420ef232a8e5790c4fae591847e32347/rules/linux/auditd/execve/lnx_auditd_binary_padding.yml",
+      "sha256": "b4bc9e39c6f8a27d59c7c7ceabd5cc404ef40db20badd32bfd7c78980c390674",
+      "provenance": "User-supplied archive; commit declared by version.txt, not independently verified"
+    },
+    {
+      "file": "lnx_auditd_bpfdoor_port_redirect.yml",
+      "source": "https://github.com/SigmaHQ/sigma/blob/552f3fee420ef232a8e5790c4fae591847e32347/rules/linux/auditd/execve/lnx_auditd_bpfdoor_port_redirect.yml",
+      "sha256": "7472238a0eda6d6ef35c118f5afbe8997003079479e759e1cb60dd7a9029d2e9",
+      "provenance": "User-supplied archive; commit declared by version.txt, not independently verified"
+    },
+    {
+      "file": "lnx_auditd_change_file_time_attr.yml",
+      "source": "https://github.com/SigmaHQ/sigma/blob/552f3fee420ef232a8e5790c4fae591847e32347/rules/linux/auditd/execve/lnx_auditd_change_file_time_attr.yml",
+      "sha256": "a2b8a1ee2bf22d7f99328e618c58c4b5a2b057f1b9a615a59f2a9c613c395a34",
+      "provenance": "User-supplied archive; commit declared by version.txt, not independently verified"
+    },
+    {
+      "file": "lnx_auditd_chattr_immutable_removal.yml",
+      "source": "https://github.com/SigmaHQ/sigma/blob/552f3fee420ef232a8e5790c4fae591847e32347/rules/linux/auditd/execve/lnx_auditd_chattr_immutable_removal.yml",
+      "sha256": "af06d645c3ae68cd20491f379a8595a54db98792ab29cd0ed217d3ca8e4d8f9c",
+      "provenance": "User-supplied archive; commit declared by version.txt, not independently verified"
+    },
+    {
+      "file": "lnx_auditd_coinminer.yml",
+      "source": "https://github.com/SigmaHQ/sigma/blob/552f3fee420ef232a8e5790c4fae591847e32347/rules/linux/auditd/execve/lnx_auditd_coinminer.yml",
+      "sha256": "0b3493e32eb167470d610cee2b74a3b18b4a1161f03e93451cbbe04f558856b4",
+      "provenance": "User-supplied archive; commit declared by version.txt, not independently verified"
+    },
+    {
+      "file": "lnx_auditd_data_exfil_wget.yml",
+      "source": "https://github.com/SigmaHQ/sigma/blob/552f3fee420ef232a8e5790c4fae591847e32347/rules/linux/auditd/execve/lnx_auditd_data_exfil_wget.yml",
+      "sha256": "f0b690721afad0bec3d993b76729ec0f5e207a9ce51bcccffa40ac6ee442ad40",
+      "provenance": "User-supplied archive; commit declared by version.txt, not independently verified"
+    },
+    {
+      "file": "lnx_auditd_find_cred_in_files.yml",
+      "source": "https://github.com/SigmaHQ/sigma/blob/552f3fee420ef232a8e5790c4fae591847e32347/rules/linux/auditd/execve/lnx_auditd_find_cred_in_files.yml",
+      "sha256": "fcdff3b0e1b3be0c5d816b7601fe8b0da6a16b8468446145f6670b018027d1fa",
+      "provenance": "User-supplied archive; commit declared by version.txt, not independently verified"
+    },
+    {
+      "file": "lnx_auditd_masquerading_crond.yml",
+      "source": "https://github.com/SigmaHQ/sigma/blob/552f3fee420ef232a8e5790c4fae591847e32347/rules/linux/auditd/execve/lnx_auditd_masquerading_crond.yml",
+      "sha256": "016821de7c36c327ef340a79a9f847ac43cc898ede4bd6c1ee669cbc1d945f64",
+      "provenance": "User-supplied archive; commit declared by version.txt, not independently verified"
+    },
+    {
+      "file": "lnx_auditd_modify_system_firewall.yml",
+      "source": "https://github.com/SigmaHQ/sigma/blob/552f3fee420ef232a8e5790c4fae591847e32347/rules/linux/auditd/execve/lnx_auditd_modify_system_firewall.yml",
+      "sha256": "bf8647b430fe196ca218d613ba4c8279bca9d6e18c1cc1b508bd7b40ccfc0a02",
+      "provenance": "User-supplied archive; commit declared by version.txt, not independently verified"
+    },
+    {
+      "file": "lnx_auditd_susp_cmds.yml",
+      "source": "https://github.com/SigmaHQ/sigma/blob/552f3fee420ef232a8e5790c4fae591847e32347/rules/linux/auditd/execve/lnx_auditd_susp_cmds.yml",
+      "sha256": "f46bcb8be7f5e0eb16478c51849a697a6a3e786b9dc1b4e1f1abd223b0889d77",
+      "provenance": "User-supplied archive; commit declared by version.txt, not independently verified"
+    },
+    {
+      "file": "lnx_auditd_susp_histfile_operations.yml",
+      "source": "https://github.com/SigmaHQ/sigma/blob/552f3fee420ef232a8e5790c4fae591847e32347/rules/linux/auditd/execve/lnx_auditd_susp_histfile_operations.yml",
+      "sha256": "6e1a35503e21c441c8c7ea8aa6ed46b5c105f785a515a72156bd597984c3acad",
+      "provenance": "User-supplied archive; commit declared by version.txt, not independently verified"
+    },
+    {
+      "file": "lnx_auditd_keylogging_with_pam_d.yml",
+      "source": "https://github.com/SigmaHQ/sigma/blob/552f3fee420ef232a8e5790c4fae591847e32347/rules/linux/auditd/lnx_auditd_keylogging_with_pam_d.yml",
+      "sha256": "6d8c21170ae1127d0332decff157db704c6664c96eee4cb956dc3a6d33696eb8",
+      "provenance": "User-supplied archive; commit declared by version.txt, not independently verified"
+    },
+    {
+      "file": "lnx_auditd_susp_c2_commands.yml",
+      "source": "https://github.com/SigmaHQ/sigma/blob/552f3fee420ef232a8e5790c4fae591847e32347/rules/linux/auditd/lnx_auditd_susp_c2_commands.yml",
+      "sha256": "f40b2f71f104e3f9339cd92317155d4d753efaefc7b540dfc20b7a2c292a03d3",
+      "provenance": "User-supplied archive; commit declared by version.txt, not independently verified"
+    },
+    {
+      "file": "lnx_auditd_auditing_config_change.yml",
+      "source": "https://github.com/SigmaHQ/sigma/blob/552f3fee420ef232a8e5790c4fae591847e32347/rules/linux/auditd/path/lnx_auditd_auditing_config_change.yml",
+      "sha256": "5de115711f0fa9f358070b4beaa6ed167a05aeb4c5d317c91bbe7442e2b2e816",
+      "provenance": "User-supplied archive; commit declared by version.txt, not independently verified"
+    },
+    {
+      "file": "lnx_auditd_web_rce.yml",
+      "source": "https://github.com/SigmaHQ/sigma/blob/552f3fee420ef232a8e5790c4fae591847e32347/rules/linux/auditd/syscall/lnx_auditd_web_rce.yml",
+      "sha256": "9ef1058a926418eaf66f478fe4dfbbd8bd7a58b6e223ea761a06150227295e50",
+      "provenance": "User-supplied archive; commit declared by version.txt, not independently verified"
+    },
+    {
+      "file": "app_python_sql_exceptions.yml",
+      "source": "https://github.com/SigmaHQ/sigma/blob/552f3fee420ef232a8e5790c4fae591847e32347/rules/application/python/app_python_sql_exceptions.yml",
+      "sha256": "68230e32393b7d7dd71ae5cf99241dc0c5949a79bcba5df33e40d04345135716",
+      "provenance": "User-supplied archive; commit declared by version.txt, not independently verified"
+    },
+    {
+      "file": "appframework_ruby_on_rails_exceptions.yml",
+      "source": "https://github.com/SigmaHQ/sigma/blob/552f3fee420ef232a8e5790c4fae591847e32347/rules/application/ruby/appframework_ruby_on_rails_exceptions.yml",
+      "sha256": "180fab7c38a0840966f3a40c43cfcfac94fd3d3f8e136d46f48d57ee83d0b351",
+      "provenance": "User-supplied archive; commit declared by version.txt, not independently verified"
+    },
+    {
+      "file": "nodejs_rce_exploitation_attempt.yml",
+      "source": "https://github.com/SigmaHQ/sigma/blob/552f3fee420ef232a8e5790c4fae591847e32347/rules/application/nodejs/nodejs_rce_exploitation_attempt.yml",
+      "sha256": "09d125f6f6faf300235fca870e326ff882a4ff924150e90460abbbdf3c091281",
+      "provenance": "User-supplied archive; commit declared by version.txt, not independently verified"
+    }
+  ],
+  "unbundled": [
+    {
+      "id": "9e1bef8d-0fff-46f6-8465-9aa54e128c1e",
+      "title": "Use Of Hidden Paths Or Files",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/path/lnx_auditd_hidden_binary_execution.yml",
+      "reason": "Not bundled: absent from supplied July 2026 Linux snapshot and unavailable in original public retrieval; no detection enabled."
+    },
+    {
+      "id": "ca94a6db-8106-4737-9ed2-3e3bb826af0a",
+      "title": "Password Policy Discovery - Linux",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/lnx_auditd_password_policy_discovery.yml",
+      "reason": "Not bundled: absent from supplied July 2026 Linux snapshot and unavailable in original public retrieval; no detection enabled."
+    },
+    {
+      "id": "2dad0cba-c62a-4a4f-949f-5f6ecd619769",
+      "title": "Split A File Into Pieces - Linux",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/syscall/lnx_auditd_split_file_into_pieces.yml",
+      "reason": "Not bundled: absent from supplied July 2026 Linux snapshot and unavailable in original public retrieval; no detection enabled."
+    },
+    {
+      "id": "b207d563-a1d9-4275-b349-77d1eb55aa6d",
+      "title": "System Info Discovery via Sysinfo Syscall",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/syscall/lnx_auditd_susp_discovery_sysinfo_syscall.yml",
+      "reason": "Not bundled: absent from supplied July 2026 Linux snapshot and unavailable in original public retrieval; no detection enabled."
+    },
+    {
+      "id": "a7af2487-9c2f-42e4-9bb9-ff961f0561d5",
+      "title": "Audio Capture",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/lnx_auditd_audio_capture.yml",
+      "reason": "Not bundled: absent from supplied July 2026 Linux snapshot and unavailable in original public retrieval; no detection enabled."
+    },
+    {
+      "id": "f34047d9-20d3-4e8b-8672-0a35cc50dc71",
+      "title": "System Information Discovery - Auditd",
+      "source": "https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/auditd/lnx_auditd_system_info_discovery.yml",
+      "reason": "Not bundled: absent from supplied July 2026 Linux snapshot and unavailable in original public retrieval; no detection enabled."
+    }
+  ],
+  "local_archive": {
+    "imported": "2026-10-20",
+    "version": "Release Date: 2026-07-09\nLabel: r2026-04-01-50-g552f3fee4\nCommit-Hash: 552f3fee420ef232a8e5790c4fae591847e32347",
+    "provenance": "User-supplied archive; version declaration is not independently verified"
+  }
+}
