@@ -1,6 +1,5 @@
 # Skidplate
 
-**Under the surface. On your side.**
 
 Skidplate is a local Linux audit-log viewer with behavior detections and
 process/network context. It combines an Event Viewer style investigation flow
@@ -16,6 +15,8 @@ The pack includes 30 auditd rules and three opt-in application rules. See
 Matching alerts can include [redacted, data-only argument context](docs/ARGUMENT-CONTEXT.md)
 with matched Sigma selections. Unknown secrets may remain; persistence can be
 disabled in Settings.
+
+link to sigma detection rules: [(https://github.com/SigmaHQ/sigma)]
 
 Built for Arch Linux and Omarchy; other Linux desktops need the same GTK3,
 AppIndicator and auditd interfaces. This is a standalone application, not a
