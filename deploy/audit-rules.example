@@ -1,0 +1,23 @@
+# OPTIONAL REFERENCE ONLY. Not installed or loaded by Skidplate.
+# Review existing rules, coverage, platform support, and volume before use.
+# Never delete or replace existing audit rules to install these examples.
+# Each referenced path/directory must exist. These examples assume native b64.
+
+-a always,exit -F arch=b64 -F path=/etc/passwd -F perm=wa -k sentinel_identity
+-a always,exit -F arch=b64 -F path=/etc/shadow -F perm=wa -k sentinel_identity
+-a always,exit -F arch=b64 -F path=/etc/group -F perm=wa -k sentinel_identity
+-a always,exit -F arch=b64 -F path=/etc/sudoers -F perm=wa -k sentinel_privilege
+-a always,exit -F arch=b64 -F dir=/etc/sudoers.d -F perm=wa -k sentinel_privilege
+-a always,exit -F arch=b64 -F dir=/etc/audit -F perm=wa -k sentinel_audit
+
+# OPTIONAL HIGHER VOLUME: successful/failed root exec records feed baseline and
+# temporary-executable detections. Detector checks success before alerting.
+# -a always,exit -F arch=b64 -S execve,execveat -F euid=0 -k sentinel_root_exec
+# Add reviewed b32 equivalents only if your platform supports them and needs them.
+
+# OPTIONAL HIGHER VOLUME: outbound connect() with its associated SOCKADDR record
+# feeds network-watchlist and network-temp-exec. Review collection volume first.
+# This is a collection rule, not a firewall rule. It is NOT installed or loaded.
+# The detector currently handles direct connect syscalls on little-endian
+# x86_64, i386, and aarch64; legacy i386 socketcall is unsupported.
+# -a always,exit -F arch=b64 -S connect -k sentinel_connect

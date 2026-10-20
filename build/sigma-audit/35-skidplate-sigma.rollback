@@ -1,0 +1,43 @@
+# Exact overlay removals; never auditctl -D.
+-d always,exit -F arch=b32 -S personality -F a0&=0x40000 -k sentinel_sigma_aslr
+-d always,exit -F arch=b32 -S syslog -F a0=6 -k sentinel_sigma_syslog
+-d always,exit -F arch=b32 -S syslog -F a0=5 -k sentinel_sigma_syslog
+-d always,exit -F arch=b32 -S syslog -F a0=4 -k sentinel_sigma_syslog
+-d always,exit -F arch=b64 -S personality -F a0&=0x40000 -k sentinel_sigma_aslr
+-d always,exit -F arch=b64 -S syslog -F a0=6 -k sentinel_sigma_syslog
+-d always,exit -F arch=b64 -S syslog -F a0=5 -k sentinel_sigma_syslog
+-d always,exit -F arch=b64 -S syslog -F a0=4 -k sentinel_sigma_syslog
+-d always,exit -F arch=b32 -S execve,execveat -F path=/usr/bin/dd -F perm=x -k sentinel_sigma_exec
+-d always,exit -F arch=b64 -S execve,execveat -F path=/usr/bin/dd -F perm=x -k sentinel_sigma_exec
+-d always,exit -F arch=b32 -S execve,execveat -F path=/usr/bin/truncate -F perm=x -k sentinel_sigma_exec
+-d always,exit -F arch=b64 -S execve,execveat -F path=/usr/bin/truncate -F perm=x -k sentinel_sigma_exec
+-d always,exit -F arch=b32 -S execve,execveat -F path=/usr/bin/touch -F perm=x -k sentinel_sigma_exec
+-d always,exit -F arch=b64 -S execve,execveat -F path=/usr/bin/touch -F perm=x -k sentinel_sigma_exec
+-d always,exit -F arch=b32 -S execve,execveat -F path=/usr/bin/grep -F perm=x -k sentinel_sigma_exec
+-d always,exit -F arch=b64 -S execve,execveat -F path=/usr/bin/grep -F perm=x -k sentinel_sigma_exec
+-d always,exit -F arch=b32 -S execve,execveat -F path=/usr/bin/cp -F perm=x -k sentinel_sigma_exec
+-d always,exit -F arch=b64 -S execve,execveat -F path=/usr/bin/cp -F perm=x -k sentinel_sigma_exec
+-d always,exit -F arch=b32 -S execve,execveat -F path=/usr/bin/chmod -F perm=x -k sentinel_sigma_exec
+-d always,exit -F arch=b64 -S execve,execveat -F path=/usr/bin/chmod -F perm=x -k sentinel_sigma_exec
+-d always,exit -F arch=b32 -S execve,execveat -F path=/usr/bin/chattr -F perm=x -k sentinel_sigma_exec
+-d always,exit -F arch=b64 -S execve,execveat -F path=/usr/bin/chattr -F perm=x -k sentinel_sigma_exec
+-d always,exit -F arch=b32 -S execve,execveat -F path=/usr/bin/nft -F perm=x -k sentinel_sigma_exec
+-d always,exit -F arch=b64 -S execve,execveat -F path=/usr/bin/nft -F perm=x -k sentinel_sigma_exec
+-d always,exit -F arch=b32 -S execve,execveat -F path=/usr/bin/ufw -F perm=x -k sentinel_sigma_exec
+-d always,exit -F arch=b64 -S execve,execveat -F path=/usr/bin/ufw -F perm=x -k sentinel_sigma_exec
+-d always,exit -F arch=b32 -S execve,execveat -F path=/usr/bin/sysctl -F perm=x -k sentinel_sigma_exec
+-d always,exit -F arch=b64 -S execve,execveat -F path=/usr/bin/sysctl -F perm=x -k sentinel_sigma_exec
+-d always,exit -F arch=b32 -S execve,execveat -F path=/usr/bin/ftp -F perm=x -k susp_activity
+-d always,exit -F arch=b64 -S execve,execveat -F path=/usr/bin/ftp -F perm=x -k susp_activity
+-d always,exit -F arch=b32 -S execve,execveat -F path=/usr/bin/sftp -F perm=x -k susp_activity
+-d always,exit -F arch=b64 -S execve,execveat -F path=/usr/bin/sftp -F perm=x -k susp_activity
+-d always,exit -F arch=b32 -S execve,execveat -F path=/usr/bin/scp -F perm=x -k susp_activity
+-d always,exit -F arch=b64 -S execve,execveat -F path=/usr/bin/scp -F perm=x -k susp_activity
+-d always,exit -F arch=b32 -S execve,execveat -F path=/usr/bin/ssh -F perm=x -k susp_activity
+-d always,exit -F arch=b64 -S execve,execveat -F path=/usr/bin/ssh -F perm=x -k susp_activity
+-d always,exit -F arch=b32 -S execve,execveat -F path=/usr/bin/ss -F perm=x -k susp_activity
+-d always,exit -F arch=b64 -S execve,execveat -F path=/usr/bin/ss -F perm=x -k susp_activity
+-d always,exit -F arch=b32 -S execve,execveat -F path=/usr/bin/base64 -F perm=x -k susp_activity
+-d always,exit -F arch=b64 -S execve,execveat -F path=/usr/bin/base64 -F perm=x -k susp_activity
+-d always,exit -F arch=b32 -S execve,execveat -F path=/usr/bin/curl -F perm=x -k susp_activity
+-d always,exit -F arch=b64 -S execve,execveat -F path=/usr/bin/curl -F perm=x -k susp_activity

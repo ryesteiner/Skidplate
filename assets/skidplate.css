@@ -1,0 +1,37 @@
+/* Local styles only; no remote resources or evidence markup. */
+window.skidplate { background: #11161d; color: #e5ebf3; }
+.skidplate .brand { font-size: 26px; font-weight: 800; letter-spacing: 3px; color: #eaf3ff; }
+.skidplate .eyebrow { font-size: 10px; font-weight: bold; letter-spacing: 1px; color: #97a9bf; }
+.skidplate .muted { color: #a6b4c6; font-size: 12px; }
+.skidplate .instrument { background: #1b232e; border: 1px solid #334253; border-top: 3px solid #64c8ed; border-radius: 9px; padding: 16px; }
+.skidplate .instrument.ok { border-top-color: #7dc99d; }
+.skidplate .instrument.warning { border-top-color: #edbd68; }
+.skidplate .instrument.danger { border-top-color: #ef7f87; }
+.skidplate .readout { font-size: 23px; font-weight: bold; }
+.skidplate .section-title { font-size: 17px; font-weight: bold; color: #e5ebf3; }
+.skidplate .health-strip { background: #1b232e; border-left: 3px solid #edbd68; padding: 14px 16px; border-radius: 4px; }
+.skidplate button { background-image: none; background-color: #263341; color: #e5ebf3; border-color: #40566b; border-radius: 5px; padding: 10px 14px; }
+.skidplate button:hover { background-color: #32465a; }
+.skidplate button:checked { background-color: #244c61; border-color: #64c8ed; }
+.skidplate button:disabled { color: #8c98a9; background-color: #1b232e; }
+.skidplate entry, .skidplate textview text, .skidplate treeview { background-color: #141c25; color: #e5ebf3; }
+.skidplate entry { padding: 8px 12px; }
+.skidplate treeview:selected { background-color: #26465c; color: #ffffff; }
+.skidplate treeview header button { background-color: #263341; }
+.skidplate paned > separator { background-color: #49647c; min-height: 9px; }
+.skidplate scrolledwindow { border-color: #334253; }
+.skidplate checkbutton label { color: #d7e1ed; }
+.skidplate .timeline-item { border-left: 3px solid #64c8ed; padding: 14px 16px; background-color: #1b232e; }
+.skidplate .timeline-item.high { border-left-color: #ef7f87; }
+
+/* Collapsible source diagnostics under the continuous instrument fascia. */
+.skidplate .system-checks .instrument { border-top: 1px solid #334253; border-left: 3px solid #64c8ed; border-radius: 7px; padding: 16px; }
+.skidplate .system-checks .instrument.warning { border-left-color: #edbd68; }
+.skidplate .system-checks .readout { font-size: 19px; }
+
+/* Dashboard selector switches: raised caps and a lit lower edge when engaged. */
+.skidplate .switch-panel { background: #0d1217; border: 1px solid #45515b; border-radius: 10px; padding: 10px; box-shadow: inset 0 2px 4px #06090c; }
+.skidplate .switch-panel button { font-family: monospace; font-size: 11px; font-weight: bold; letter-spacing: 1px; min-width: 70px; min-height: 34px; margin: 3px; padding: 10px 12px; border: 1px solid #4d5861; border-bottom: 4px solid #1b252e; border-radius: 5px; background-image: linear-gradient(to bottom, #333e47, #1c252d); color: #aab6bd; box-shadow: 0 3px 3px #05080b; }
+.skidplate .switch-panel button:hover { background-image: linear-gradient(to bottom, #42515a, #26343b); color: #e2f5ef; }
+.skidplate .switch-panel button:checked { background-image: linear-gradient(to bottom, #243d3b, #142924); color: #c5fff0; border-color: #5fc5a8; border-bottom-color: #8bffda; box-shadow: inset 0 -2px 5px rgba(99, 255, 206, 0.2), 0 0 9px rgba(99, 255, 206, 0.35); text-shadow: 0 0 5px rgba(99, 255, 206, 0.65); }
+.skidplate .switch-selector button { font-family: monospace; font-weight: bold; color: #c5fff0; border-color: #5fc5a8; border-bottom: 3px solid #8bffda; background-image: linear-gradient(to bottom, #243d3b, #142924); }
