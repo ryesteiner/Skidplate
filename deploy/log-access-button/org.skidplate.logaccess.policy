@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN" "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
-<policyconfig>
-  <action id="org.skidplate.logaccess.enable">
-    <description>Enable read access to existing audit logs</description>
-    <message>Administrator authentication is required to let your account read existing audit logs for Skidplate. Other applications running as your account will also have this access.</message>
-    <defaults><allow_any>no</allow_any><allow_inactive>no</allow_inactive><allow_active>auth_admin</allow_active></defaults>
-  </action>
-</policyconfig>
