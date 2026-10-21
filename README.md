@@ -17,11 +17,13 @@ Matching alerts can include [redacted, data-only argument context](docs/ARGUMENT
 with matched Sigma selections. Unknown secrets may remain; persistence can be
 disabled in Settings.
 
-link to sigma detection rules: [(https://github.com/SigmaHQ/sigma)]
+link to sigma detection rules: (https://github.com/SigmaHQ/sigma)
 
 Built for Arch Linux and Omarchy; other Linux desktops need the same GTK3,
 AppIndicator and auditd interfaces. This is a standalone application, not a
-native Omarchy shell plugin. It runs as your normal user.
+native Omarchy shell plugin. It runs as your normal user. 
+
+[Disclaimer] Made with help of codex for testing codex security features for patching/detecting issues. Not all files have been read and verified by a person yet. please look over repo before using.
 
 ## Features
 
